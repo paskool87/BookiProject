@@ -3,6 +3,7 @@
   font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
+  max-width: 1440px;
 
 }
 
@@ -283,6 +284,8 @@ h4 {
 .populaires-cards .card {
   display: flex;
   margin-top: 33px;
+  height: 146px;
+  
 }
 
 .populaires-cards img {
@@ -394,7 +397,7 @@ footer {
   }
 
   .populaires-cards a {
-    width: 30%;
+    width: calc(33% - 5px);
   }
 
   .populaires-cards .card-title {
@@ -404,6 +407,18 @@ footer {
   .populaires-cards .card-subtitle {
     font-size: 13px;
   }
+
+  .unephoto {
+  width: calc(25% - 20px);
+  height: 270px;
+}
+.unephoto img {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
 }
 
 /* Small devices (phones, less than 768px) */
