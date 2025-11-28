@@ -1,6 +1,9 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+
 }
 
 :root {
@@ -310,7 +313,7 @@ h4 {
 .populaires-cards .card-rating {
   margin-bottom: 10px;
 }
-.activites h2 {
+#activites h2 {
   margin-top: 70px;
   margin-bottom: 35px;
 }
