@@ -229,7 +229,7 @@ h4 {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
   width: 65%;
 }
 .containercards {
@@ -375,7 +375,7 @@ footer {
     flex-direction: column;
   }
 
-  .hebergements {
+  #hebergements {
     width: 100%;
   }
 
