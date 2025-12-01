@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   max-width: 1440px;
-
 }
 
 :root {
@@ -30,7 +29,6 @@ body {
   box-sizing: border-box;
 }
 main {
-  
   padding: 0px 50px;
   gap: 35px;
 }
@@ -98,6 +96,7 @@ a {
   border-bottom-left-radius: 15px;
 }
 .location form {
+    display: flex;
   margin: 0;
   padding: 0;
 }
@@ -105,9 +104,10 @@ a {
 .location form input {
   height: 49px;
   margin: 0;
-  position: relative;
-  top: -2px;
-  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+  
+  padding: 0 15px;
   outline: none;
   border-left: none;
   border-right: none;
@@ -117,21 +117,26 @@ a {
 .location form button {
   height: 49px;
   width: 132px;
-  position: relative;
-  top: 2px;
-
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 15px 16px;
   background: #0065fc;
   border: 1px solid #0065fc;
-  border-left: 5px solid #0065fc;
+  
   color: white;
   font-size: 18px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+.loupe {
+  display: none;
+}
 
 .filters {
+  margin-top: 35px;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -285,12 +290,11 @@ h4 {
   display: flex;
   margin-top: 33px;
   height: 146px;
-  
 }
 
 .populaires-cards img {
   width: 33%;
-  height: 136px;
+  height: 146px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -361,15 +365,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
-  
 }
-.foot h3{
-    font-size: 18px;
-    
+.foot h3 {
+  font-size: 18px;
 }
-.foot p{
-    font-size: 16px;
+.foot p {
+  font-size: 16px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -409,167 +410,157 @@ footer {
   }
 
   .unephoto {
-  width: calc(25% - 20px);
-  height: 270px;
-}
-.unephoto img {
-  height: 200px;
-  width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
+    width: calc(25% - 20px);
+    height: 270px;
+  }
+  .unephoto img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
   /* ... */
+  body {
+    all: unset;
+    margin: 0;
+    padding: 0;
+  }
 
   header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  border: 2px solid black;
-  }
-nav ul {
     width: 100%;
-  display: flex;
-  gap: 68px;
-  
-  padding: 0;
-  height: 35px;
-  margin: 0;
-  align-items: end;
-  border: 2px solid black;
-}
-nav ul li:hover {
-  color: var(--main-color);
-  border-top: 2px solid var(--main-color);
-  padding-top: 10px;
-  cursor: pointer;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  header img {
+    display: block;
+    margin: auto;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1;
+    text-align: center;
+  }
+  nav ul li:hover {
+    color: var(--main-color);
+    border-top: none;
+    border-bottom: 2px solid var(--main-color);
+    padding-top: 10px;
+    cursor: pointer;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-.section-title h1 {
-  margin: 0;
-  font-size: 22px;
-}
-.section-title p {
-  margin-top: 5px;
-  font-size: 16px;
-}
+  .section-title h1 {
+    margin-top: 50px;
+  }
+  .section-title p {
+    margin-top: 5px;
+    font-size: 16px;
+  }
 
-.location {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-.iconenoire {
-  margin: 0;
-  color: black;
-  height: 49px;
-  width: 50px;
-  background: #f2f2f2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-.location form {
-  margin: 0;
-  padding: 0;
-}
+  .location {
+    width: 100%;
 
-.location form input {
-  height: 49px;
-  margin: 0;
-  position: relative;
-  top: -2px;
-  padding: 0;
-  outline: none;
-  border-left: none;
-  border-right: none;
-  border-top: 1px solid #f2f2f2;
-  border-bottom: 1px solid #f2f2f2;
-}
-.location form button {
-  height: 49px;
-  width: 132px;
-  position: relative;
-  top: 2px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
 
-  margin: 0;
-  padding: 15px 16px;
-  background: #0065fc;
-  border: 1px solid #0065fc;
-  border-left: 5px solid #0065fc;
-  color: white;
-  font-size: 18px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-}
+  .location form {
+   
+  }
 
-.filters {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  height: 50px;
-}
-.boutonsfiltre {
-  display: flex;
-  gap: 15px;
-}
-.filtres {
-  font-size: 18px;
-}
-.filter-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 19px;
-  border-radius: 25px;
-  border: 2px solid #d9d9d9;
-  height: 50px;
-  font-size: 17px;
-  font-weight: bold;
-  background: white;
-}
-.filter-btn:hover {
-  background: #deebff;
-  cursor: auto;
-}
-.info {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.iconeinfo {
-  margin: 0;
-  padding: 0px 0px 2px 2px;
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #d9d9d9;
-  border-radius: 50%;
-  font-size: 10px;
-}
-.info p {
-  font-size: 16px;
-  margin: 0;
-}
+  .location form button {
+    height: 49px;
+    width: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .loupe {
+    height: 49px;
+    width: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+    
+  }
+  .search-btn {
+    display: none;
+  }
+
+  .filters {
+    display: block;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .boutonsfiltre {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .filtres {
+    font-size: 18px;
+  }
+  .filter-btn {
+    width: calc(50% - 10px);
+  }
+  .info {
+  }
+  .hebergements-and-populaires {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .populaires-cards {
+    display: block;
+  }
+
+  #hebergements {
+    background: none;
+    width: 100%;
+  }
+  .containercards {
+    display: block;
+    width: 100%;
+  }
+  .hebergement-cards {
+    width: 100% !important;
+  }
+  .hebergement-cards .card {
+    width: 100%;
+  }
+  .desphotos {
+    display: block;
+  }
+  .unephoto {
+    width: 100% !important;
+  }
+  footer {
+    display: block;
+  }
+  .foot {
+    width: 100% !important;
+    max-height: 100px;
+    padding-left: 50px;
+  }
 }
