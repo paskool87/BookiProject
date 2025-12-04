@@ -119,6 +119,8 @@ a {
   border-right: none;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
+  width: 165px;
+  text-align: center;
 }
 
 .location form button {
@@ -171,6 +173,9 @@ a {
   font-size: 17px;
   font-weight: bold;
   background: white;
+}
+.filter-btn .fa-solid {
+  font-size: 22px;
 }
 
 .filter-btn:hover {
@@ -286,15 +291,21 @@ h4 {
 .hebergement-cards .card-title {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: clamp(12px, 1.2vw, 14px);
 }
 
 .hebergement-cards .card-subtitle {
   margin-top: 8px;
   margin-bottom: 0;
+  padding-left: 10px;
+  font-size: clamp(12px, 1.2vw, 14px);
 }
 
 .hebergement-cards .card-rating {
   margin-top: 15px;
+  padding-left: 10px;
 }
 
 /****** Populaires ***********/
@@ -349,6 +360,7 @@ h4 {
 
 #activites {
   margin: 0px 50px;
+  padding: 0px 30px;
 }
 
 #activites h2 {
@@ -378,13 +390,13 @@ h4 {
 }
 
 .unephoto {
-  width: calc(25% - 15px);
-  aspect-ratio: 320 / 440;
+  width: calc(25% - 22px);
+  aspect-ratio: 297 / 440;
 }
 
 .unephoto img {
   width: 100%;
-  aspect-ratio: 320 / 380;
+  aspect-ratio: 297 / 380;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -433,6 +445,14 @@ footer {
     width: 100%;
   }
 
+  .hebergement-cards .card-title{
+    font-size: 14px;
+  }
+
+  .hebergement-cards .card-subtitle{
+    font-size: 14px;
+  }
+
   .populaires {
     width: 100%;
     margin-top: 50px;
@@ -457,13 +477,13 @@ footer {
   }
 
   .unephoto {
-    width: calc(25% - 15px);
-    aspect-ratio: 216 / 270;
+    width: calc(25% - 18px);
+    aspect-ratio: 193 / 270;
   }
 
   .unephoto img {
     width: 100%;
-    aspect-ratio: 216 / 200;
+    aspect-ratio: 193 / 200;
   }
 
   .titre-card1 {
@@ -497,17 +517,23 @@ footer {
 
   nav {
     width: 100%;
-    margin: auto;
-    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
   nav ul {
     display: flex;
+    width: 100%;
+    gap: 0;
+    padding: 0;
   }
 
   nav ul li {
-    flex: 1;
-    text-align: center;
+    padding-bottom: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid white;
   }
 
   nav ul li:hover {
@@ -582,7 +608,7 @@ footer {
     gap: 15px;
   }
 
-    .filter-btn {
+  .filter-btn {
     width: calc(50% - 10px);
   }
 
@@ -632,7 +658,7 @@ footer {
     width: 100%;
   }
 
-  .hebergement-cards img{
+  .hebergement-cards img {
     aspect-ratio: 335 / 124;
   }
 
