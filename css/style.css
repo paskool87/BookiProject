@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   max-width: 1440px;
-}
+  }
 
 :root {
   --main-color: #0065fc;
@@ -80,6 +80,7 @@ a {
   margin-top: 5px;
   font-size: 16px;
 }
+/* formulaire de localisation */
 
 .location {
   display: flex;
@@ -142,6 +143,8 @@ a {
 .loupe {
   display: none;
 }
+
+/* Boutons filtre */
 
 .filters {
   margin-top: 35px;
@@ -208,6 +211,8 @@ a {
   font-size: 16px;
   margin: 0;
 }
+
+
 
 .card {
   background-color: white;
@@ -358,6 +363,8 @@ h4 {
   margin-bottom: 10px;
 }
 
+/* Activités*/
+
 #activites {
   margin: 0px 50px;
   padding: 0px 30px;
@@ -499,6 +506,7 @@ footer {
     width: 100%;
     margin: 0;
     padding: 0;
+    min-width: 320px;
   }
 
   header {
@@ -558,7 +566,7 @@ footer {
     margin-top: 5px;
     font-size: 16px;
     margin-left: 20px;
-  }
+      }
 
   .location {
     justify-content: center;
