@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   max-width: 1440px;
-  }
+}
 
 :root {
   --main-color: #0065fc;
@@ -212,8 +212,6 @@ a {
   margin: 0;
 }
 
-
-
 .card {
   background-color: white;
   border-radius: 20px;
@@ -298,7 +296,7 @@ h4 {
   margin-bottom: 0;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: clamp(12px, 1.2vw, 14px);
+  font-size: clamp(12px, 1.2vw, 16px);
 }
 
 .hebergement-cards .card-subtitle {
@@ -367,7 +365,8 @@ h4 {
 
 #activites {
   margin: 0px 50px;
-  
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 #activites h2 {
@@ -452,13 +451,18 @@ footer {
     width: 100%;
   }
 
-  .hebergement-cards .card-title{
+  .hebergement-cards .card-title {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .hebergement-cards .card-subtitle {
     font-size: 14px;
   }
 
-  .hebergement-cards .card-subtitle{
-    font-size: 14px;
-  }
+  /*cartes populaires en ligne*/
 
   .populaires {
     width: 100%;
@@ -476,12 +480,14 @@ footer {
   }
 
   .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 14px;
   }
+
+  /*Activités tablette*/
 
   .unephoto {
     width: calc(25% - 18px);
@@ -566,7 +572,7 @@ footer {
     margin-top: 5px;
     font-size: 16px;
     margin-left: 20px;
-      }
+  }
 
   .location {
     justify-content: center;
@@ -626,6 +632,8 @@ footer {
     margin-bottom: 20px;
   }
 
+  /*...*/
+
   .hebergements-and-populaires {
     flex-direction: column-reverse;
     gap: 30px;
@@ -668,6 +676,13 @@ footer {
 
   .hebergement-cards img {
     aspect-ratio: 335 / 124;
+  }
+
+  /*Activités mobile*/
+
+  #activites {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .desphotos {
