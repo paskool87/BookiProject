@@ -296,14 +296,17 @@ h4 {
   margin-bottom: 0;
   padding-left: 10px;
   padding-top: 10px;
-  font-size: clamp(12px, 1.2vw, 16px);
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .hebergement-cards .card-subtitle {
   margin-top: 8px;
   margin-bottom: 0;
   padding-left: 10px;
-  font-size: clamp(12px, 1.2vw, 14px);
+  font-size: 14px;
 }
 
 .hebergement-cards .card-rating {
@@ -449,13 +452,6 @@ footer {
 
   #hebergements {
     width: 100%;
-  }
-
-  .hebergement-cards .card-title {
-    font-size: 16px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
   }
 
   .hebergement-cards .card-subtitle {
