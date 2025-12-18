@@ -1,7 +1,7 @@
 /****** General ***********/
 * {
   font-family: "Raleway", sans-serif;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1440px;
 }
@@ -43,6 +43,11 @@ header img {
   width: 61.09px;
   height: 19px;
   padding: 30px 50px;
+  margin: 0;
+}
+
+nav {
+  margin: 0;
 }
 
 nav ul {
@@ -155,6 +160,7 @@ a {
 }
 
 .boutonsfiltre {
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -179,6 +185,7 @@ a {
 }
 .filter-btn .fa-solid {
   font-size: 22px;
+  margin: 0;
 }
 
 .filter-btn:hover {
@@ -267,6 +274,7 @@ h4 {
 /****** Hebergements ***********/
 #hebergements {
   width: 65%;
+  margin: 0;
 }
 
 .containercards {
@@ -277,6 +285,7 @@ h4 {
 
 .hebergement-cards {
   width: calc(33% - 15px);
+  margin: 0;
 }
 
 .hebergement-cards .card {
@@ -314,15 +323,24 @@ h4 {
   padding-left: 10px;
 }
 
+.hebergement-cards .fa-star {
+  margin: 0;
+}
+
 /****** Populaires ***********/
 .populaires {
   width: 32%;
+  margin: 0;
 }
 
 .populaires-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.populaires-title i{
+    margin: 0;
 }
 
 .populaires-title h2 {
@@ -351,6 +369,10 @@ h4 {
   box-sizing: border-box;
 }
 
+.populaires-cards .card-txt {
+  margin: 0;
+}
+
 .populaires-cards .card-title {
   margin-top: 10px;
   margin-bottom: 4px;
@@ -362,6 +384,7 @@ h4 {
 
 .populaires-cards .card-rating {
   margin-bottom: 10px;
+  margin-left: 0;
 }
 
 /* Activités*/
@@ -401,6 +424,7 @@ h4 {
 .unephoto {
   width: calc(25% - 22px);
   aspect-ratio: 297 / 440;
+  margin: 0;
 }
 
 .unephoto img {
@@ -414,6 +438,7 @@ h4 {
 .unephoto h5 {
   font-size: 16px;
   padding-left: 20px;
+  margin: 0;
 }
 
 footer {
@@ -435,10 +460,16 @@ footer {
 
 .foot h3 {
   font-size: 18px;
+  margin: 0;
 }
 
 .foot p {
   font-size: 16px;
+  margin: 0;
+}
+
+.foot a {
+  margin: 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -473,6 +504,7 @@ footer {
 
   .populaires-cards a {
     width: calc(33% - 5px);
+    margin: 0;
   }
 
   .populaires-cards .card-title {
@@ -693,6 +725,14 @@ footer {
 
   .unephoto img {
     aspect-ratio: 315 / 141;
+  }
+
+  .card1 a{
+    margin: 0;
+  }
+
+  .titre-card1{
+    height: 30%;
   }
 
   footer {
